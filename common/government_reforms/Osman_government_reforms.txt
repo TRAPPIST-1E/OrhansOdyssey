@@ -1,0 +1,35 @@
+osman_expedition = {
+	icon = "chieftain"
+	allow_normal_conversion = no
+	can_change_primary_culture = no
+	potential = {
+		has_reform = osman_expedition
+	}
+	fixed_rank = 1
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+		global_manpower_modifier = -0.15
+	}
+	effect = {
+		hidden_effect = {
+			set_variable = {
+				which = to_ab_expand_bureaucracy_cost
+				value = 50
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = to_enables_overburdened_administration
+			}
+			custom_tooltip = ability_to_administrative_burden_mechanic
+		}
+	}
+	government_abilities = {
+		to_administrative_burden_mechanic
+	}
+	custom_attributes = {
+		to_free_annexation_of_colonial_nations = yes
+		has_janissaries = yes
+	}
+}

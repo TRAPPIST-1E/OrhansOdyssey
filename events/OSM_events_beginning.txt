@@ -1,0 +1,177 @@
+namespace = osmanbegin
+
+#contact with cahokia
+country_event = {
+	id = osmanbegin.1
+	title = osmanbegin.1.test
+	desc = osmanbegin.1.desc
+	picture = REFORM_eventPicture
+	trigger = {
+		had_country_flag = {
+			flag =  osm_fled_elysia
+			days = 10
+		}
+		had_country_flag = {
+			flag =  osm_had_osman.2
+			days = 10
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	fire_only_once = yes
+	option = {
+		name = osmanbegin.1a
+		discover_province = 916
+		discover_province = 917
+		southern_illinois_area = {
+			discover_country = ROOT
+		}
+		custom_tooltip = "osm_rush_of_colonists"
+		add_country_modifier = {
+			name = nhs_new_world
+			duration = -1
+		}
+		set_country_flag = osm_contacted_cahokia_flag
+	}
+}
+
+#Cahokia Demands Submission - cahokia side
+country_event = {
+	id = osmanbegin.2
+	title = osmanbegin.2.test
+	desc = osmanbegin.2.desc
+	picture = REFORM_eventPicture
+	trigger = {
+		tag = CAO
+		OSM = {
+			has_country_flag = osm_contacted_cahokia_flag
+			OR = {
+				is_core = 4904
+				is_core = 2514
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	option = {
+		name = osmanbegin.2a
+		OSM = {
+			country_event = {
+				id = osmanbegin.3
+				days = 3
+			}
+		}
+		set_country_flag = cahokia_demanded_osm_submission
+	}
+}
+
+#Cahokia Demands Submission - otto side
+country_event = {
+	id = osmanbegin.3
+	title = osmanbegin.3.test
+	desc = osmanbegin.3.desc
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = osmanbegin.3a
+		CAO = {
+			vassalize = OSM
+			set_ai_attitude = {
+				attitude = attitude_friendly
+				who = OSM
+			}
+		}
+		custom_tooltip = "cahokia_demand_subjugation_good_TT"
+		set_country_flag = osm_flag_denied_tributary
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = CAO
+					value = 30
+				}
+			}
+		}
+	}
+	option = {
+		name = osmanbegin.3b
+		CAO = {
+			set_ai_attitude = {
+				attitude = attitude_hostile
+				who = OSM
+			}
+		}
+		OSM ={
+			every_owned_province = {
+				add_claim = CAO
+			}
+		}
+		custom_tooltip = "cahokia_demand_subjugation_war_TT"
+		set_country_flag = osm_flag_denied_vassal
+		hidden_effect = {
+			CAO = {
+				country_event = {
+					id = osmanbegin.4
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = CAO
+					value = -30
+				}
+			}
+		}
+	}
+}
+
+#Cahokia scripted war event
+country_event = {
+	id = osmanbegin.4
+	title = osmanbegin.4.t
+	desc = osmanbegin.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			continent = north_america
+		}
+	}
+	option = {
+		name = osmanbegin.4a
+		declare_war_with_cb = {
+			casus_belli = cb_vassalize_mission
+			who = OSM
+		}
+		add_prestige = 20
+	}
+	option = {
+		name = osmanbegin.4b
+		add_prestige = -10
+		custom_tooltip = "cahokia_demand_subjugation_war_TT"
+		set_country_flag = osm_flag_denied_vassal
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				has_opinion = {
+					who = CAO
+					value = 150
+				}
+			}
+		}
+	}
+}
+
+

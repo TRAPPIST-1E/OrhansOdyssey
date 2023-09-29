@@ -1,0 +1,10 @@
+﻿l_english:
+ cahokia_demand_subjugation_war_TT:0 "§RThis will most likely lead to war with Cahokia"
+ cahokia_demand_subjugation_good_TT:0 "§TWe will recieve boons to colonization and economy while a vassal of Cahokia"
+#initial flavour stuff
+ osm_rush_of_colonists:0 "§TWe are experiencing a rush of colonists, moving to explore the frontiers all around us§W"
+ osm_elite_band_tt:0 "§TWe are an elite group, where most of the males are highly skilled in combat. We will have no issue defeating our enemies on the battlefield§W"
+ osm_no_horses_tt:0 "§TWe were only able to bring a few horses with us, and we will have to keep them safe so we can selectively breed them until we have a sizeable herd§W"
+ osm_cheaper_advisors_tt:0 "§TWhat shall we pay our advisors in, leaves?§W"
+ osm_tiny_pop_tt:0 "Our population is small, with us only being able to bring around a thousand with us§W"
+ 

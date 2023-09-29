@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = osman_expedition
+
+mercantilism = 20
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+unit_type = ottoman
+capital = 898
+
+1444.1.1 = {
+	monarch = {
+		name = "Orhan Çelebi"
+		dynasty = Osmanoglu
+		birth_date = 1412.5.29
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = expansionist_personality
+	add_piety = -0.2
+}

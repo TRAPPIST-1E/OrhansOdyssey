@@ -1,0 +1,179 @@
+namespace = osman
+
+#Fleeing event
+country_event = {
+	id = osman.1
+	title = osman.1.test
+	desc = osman.1.desc
+	picture = REFORM_eventPicture
+	trigger = {
+		nhs_check_all_elysian_tags = { CONDITION = tag }
+		has_country_flag = nhs_new_flight_taken_turks
+		is_year = 1448
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = { #Stay Elysia
+		name = osman.1a
+		
+		add_stability = -1
+		capital_scope = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = -1
+		2520 = { 
+			cede_province = OSM 
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+		OSM = {
+			override_country_name = "OSMAN_EXPEDITION"
+			define_ruler = {
+				name = "Orhan Celebi"
+				adm = 4
+				dip = 2
+				mil = 5
+				age = 38
+				dynasty = Osmanoglu
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 2
+			}
+			add_core = 2520
+			add_treasury = 300
+			add_manpower = 5
+			set_country_flag = osm_fled_elysia
+			add_idea_group = development_ideas
+		}
+		OSM = {
+			country_event = {
+				id = osman.2
+			}
+		}
+	}
+	option = { #Turk time
+		name = osman.1b
+		highlight = yes
+		clr_country_flag = nhs_new_flight_taken_turks
+		ai_chance = {
+			factor = 0
+		}
+		add_manpower = -1
+		2520 = { 
+			cede_province = OSM 
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+			change_culture = turkish
+			change_religion = sunni
+		}
+		switch_tag = OSM
+		OSM = {
+			override_country_name = "OSMAN_EXPEDITION"
+			define_ruler = {
+				name = "Orhan Celebi"
+				adm = 4
+				dip = 2
+				mil = 5
+				age = 38
+				dynasty = Osmanoglu
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 2
+			}
+			add_core = 2520
+			add_treasury = 300
+			add_manpower = 5
+			add_idea_group = development_ideas
+			set_country_flag = osm_fled_elysia
+		}
+		OSM = {
+			country_event = {
+				id = osman.2
+				days = 3
+			}
+		}
+	}
+}
+
+#Journey Description event
+country_event = {
+	id = osman.2
+	title = osman.2.test
+	desc = osman.2.desc
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = osman.2a
+		2520 = {
+			add_base_manpower = 2
+			add_base_production = 2
+			add_base_tax = 2
+		}
+		set_country_flag = osm_had_osman.2
+		hidden_effect = {
+			country_event = {
+				id = osman.3
+			}
+		}
+	}
+}
+
+#where we stand event
+country_event = {
+	id = osman.3
+	title = osman.3.t
+	desc = osman.3.d
+	picture = REFORM_eventPicture
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		had_country_flag = {
+			flag = osm_fled_elysia
+			days = 5
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = osman.3a
+		custom_tooltip = "osm_tiny_pop_tt"
+		add_country_modifier = {
+			name = osm_tiny_population
+			duration = -1
+		}
+		custom_tooltip = "osm_elite_band_tt"
+		add_country_modifier = {
+			name = osm_elite_forces
+			duration = 10950
+		}
+		custom_tooltip = "osm_no_horses_tt"
+		add_country_modifier = {
+			name = osm_no_horses
+			duration = -1
+		}
+		custom_tooltip = "osm_cheaper_advisors_tt"
+		add_country_modifier = {
+			name = osm_cheaper_advisors
+			duration = 7300
+		}
+	}
+}
+

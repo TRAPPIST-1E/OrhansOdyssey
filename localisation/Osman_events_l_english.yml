@@ -1,0 +1,43 @@
+﻿l_english:
+
+##Initial Flight Event
+ osman.1.test:0 "Orhan Çelebi Flees West"
+ osman.1.desc:0 "A dastardly plot! We have learned that Orhan Çelebi has fled west in an attempl to set up his own nation in this new world, apparently dissatisfied with us and being a part of a new greek state. He appears to be heading as far west as he can, crossing what appears to be the mountains near us and out into lands unknown with his retinue and a large band of settlers. This might grow to be a new threat to our nation, or it may fizzle out and die on the vine."
+ osman.1a:0 "You can never trust a Turk"
+ osman.1b:0 "I wonder where they're headed"
+
+#Flight Description
+ osman.2.test:0 "The Great Trek West"
+ osman.2.desc:0 "As Orhan set out from Nea Konstantinopoulis, he thought back. Was this a good Idea? Maybe give the Romans a chance again? He steeled himself against the cold of the night; no, this was the right choice, and it was echoed by his men. He looked out across his followers, in their thousands, looking like a great procession to a Mecca they would all never see again. In the days following, they would cross the mountains, into the forests, and across the untamed wilderness. they met with countless tribes in the great, endless woodlands. Eventually, during a talk with the Miami tribe they would learn of the great river, the Mici-Zipii, and beyond it, among the western tributaries of the river, a great city and endless rolling plains beyond. That great city's name was Cahokia. orhan would lean his party through the wild lands, until they found a fertile spot along the fork of the great river. This, they would make their new home."
+ osman.2a:0 "The Foundations of an Empire!"
+
+ #into modifier event
+ osman.3.t:0 "Where We Stand"
+ osman.3.d:0 "When Orhan's band arrived at their new home, they were a sorry site. A group of barely a thousand, huddled together along the river. Quickly erecting some tents and wooden shacks, it quickly grew into something much more. The local tribes were curious, naturally. We only managed to bring a few horses and advanced weaponry, rifles and gunpowder. We will have to do quite a bit of nation building, but there is potential."
+ osmanbegin.3a:0 "A glorious future lies ahead!"
+
+ #contact with cahokia event
+ osmanbegin.1.test:0 "Contact with Cahokia"
+ osmanbegin.1.desc:0 "A strange group of the red-skinned tribesmen have reached us today. Unlike those around old Elysia, they wear no varangian equipment, being only clothed in animal skins and barbarian clothing. They bore spears and arrows, not the great axes of the northmen. One of them, however, did know the language of the northmen, which was used as a bridge between languages, as there was one in our settlement who knew the northern tounge. They introduced themselves as diplomats, from the great empire of Cahokia"
+ osmanbegin.1a:0 "We must be wary"
+
+ #Cahokia demands submission - cahokia side
+ osmanbegin.2.test:0 "Demand Ozman Submission"
+ osmanbegin.2.desc:0 "placeholder"
+ osmanbegin.2a:0 "ok"
+
+#Cahokia demands submission - ottoman side
+ osmanbegin.3.test:0 "Cahokia Demands Our Submission"
+ osmanbegin.3.desc:0 "A group of presumably diplomats and soldiers have arrived at our court. An interpreter was found, as few spoke the [CAO.GetAdjective] tongue. They speak of how their [CAO.Monarch.GetTitle], [CAO.Monarch.GetName] is concerned with our expansion. He demands we pay tribute to [CAO.GetName] to ensure that we will not encroach on their land, and that they will not wipe us out."
+ osmanbegin.3a:0 "We will provide tribute"
+ osmanbegin.3b:0 "Never!"
+
+ #Cahokia declares war
+ osmanbegin.4.t:0 "The Ozman Refuses to Submit"
+ osmanbegin.4a:0 "We shall crush them!"
+ osmanbegin.4b:0 "Let's not get ahead of ourselves"
+
+ 
+
+ 
+ 

@@ -1,0 +1,61 @@
+osm_tiny_population = {
+    manpower_recovery_speed = -0.75
+	global_manpower_modifier = -0.75
+	global_regiment_cost = 0.2
+}
+
+osm_small_population = {
+    manpower_recovery_speed = -0.5
+	global_manpower_modifier = -0.5
+	global_regiment_cost = 0.1
+}
+
+osm_mediocre_population = {
+    manpower_recovery_speed = -0.25
+	global_manpower_modifier = -0.25
+	global_regiment_cost = 0.5
+}
+
+osm_no_financials = {
+	global_own_trade_power = -0.75
+}
+
+osm_cheaper_advisors = {
+	advisor_cost = -0.75
+}
+
+osm_elite_forces = {
+	discipline = 0.05
+	infantry_power = 0.2
+}
+
+osm_colonizer_rush = {
+	colonists = 1
+	colony_cost_modifier = -0.5
+	may_explore = yes
+}
+
+osm_no_horses = {
+	cavalry_power = -0.5
+	cavalry_cost = 0.75
+	cav_to_inf_ratio = -0.6
+}
+
+osm_rare_horses = {
+	cavalry_cost = 0.5
+	cav_to_inf_ratio = -0.5
+}
+
+osm_few_horses = {
+	cavalry_cost = 0.25
+	cav_to_inf_ratio = -0.25
+}
+
+osm_cavalry_nation = {
+	cav_to_inf_ratio = 0.2
+	cavalry_power = 0.2
+}
+
+osm_peaceful_natives = {
+	native_uprising_chance = -1
+}

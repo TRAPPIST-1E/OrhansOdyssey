@@ -1,0 +1,42 @@
+#Osmanli
+OSM_ideas = {
+	start = {
+		discipline = 0.05
+		trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		technology_cost = -0.1
+	}
+	
+	trigger = {
+		tag = OSM
+	}
+	free = yes
+	
+	osm_far_from_home = {
+		diplomatic_reputation = 2
+	}
+	osm_similar_environment = {
+		movement_speed = 0.15
+		cavalry_power = 0.2
+	}
+	osm_gunpowder_warfare = {
+		infantry_fire = 0.5
+		backrow_artillery_damage = 0.2
+	}
+	osm_develop_plains = {
+		development_cost = -0.15
+	}
+	osm_cahokian_usurpers = {
+		core_creation = -0.2
+		build_cost = -0.2
+	}
+	osm_islamic_faith = {
+		tolerance_own = 2
+		global_missionary_strength = 0.02
+	}
+	osm_end_elysians ={
+		siege_ability = 0.25
+	}
+}

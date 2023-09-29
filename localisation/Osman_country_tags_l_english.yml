@@ -1,0 +1,26 @@
+﻿l_english:
+ OSM:0 "Osmanli"
+ OSM_ADJ:0 "Osmanli"
+ OSM_ideas:0 "Osmanli"
+ OSM_ideas_start:0 "Osmanli Tradition"
+ OSM_ideas_bonus:0 "Osmanli Ambitions"
+ osm_far_from_home:0 "Far From Home"
+ osm_far_from_home_desc:0 "We have travelled far from Anatolia and the Ottoman homeland. We have fled further still into the wilds of this great new world in pursuit of freedom for our people. This is the land which we shall make our stay, to forge an empire to last and to never have to run again"
+ osm_similar_environment:0 "Plains and Steppes"
+ osm_similar_environment_desc:0 "The original homeland of the Turks lies in the great steppes of central asia and beyond, with our kings being called Khan of Khans. This new land we find ourselves in is not too dissimilar to the great steppes of Eurasia, and we shall use that to our advantage"
+ osm_gunpowder_warfare:0 "Gunpowder Warfare"
+ osm_gunpowder_warfare_desc:0 "The natives of these lands have never seen cannons, or gunpowder at all, leaving us with a great opportunity to capitalize on it and use our technological superiority to conquer all around us. We will put cannons and rifles to great use within our armies"
+ osm_develop_plains:0 "Develop the Plains"
+ osm_develop_plains_desc:0 "These great plains are woefully underdeveloped and underpopulated, and wrought by conflict between tribes. We shall assert our dominance among the local tribes and bring peace and prosperity to the fertile grasslands of the interior" 
+ osm_cahokian_usurpers:0 "Usurpers of Cahokia"
+ osm_cahokian_usurpers_desc:0 "Cahokia is an empire built atop the titular city, having subjugated the local tribes and established a grand trading and mercantile empire along the great river and it's tributaries. We will usurp their empire and make Cahokia our new capital, redone in modern fashion according to proper architectural principles"
+ osm_islamic_faith:0 "Empire of Faith"
+ osm_islamic_faith_desc:0 "We are the only Islamic state in the new world, and we must spread the light and principles of Islam to the uncivilized pagans and tribesmen around us"
+ osm_end_elysians:0 "End the Third Odyssey"
+ osm_end_elysians_desc:0 "Coming back upon the Elysians was certainly a site, having fled years ago from a small colony shantytown name Nea Konstantinopolis to find a bustling city at the heart of a prospective empire. However, this small state thousands of miles and a sea away from Rome cannot rightfully call itself the heir to the empire for any longer, and so we must march on this new Roman Empire to claim the title for ourselves and end this Third Odyssey"
+
+ #Country Names
+ OSMAN_EXPEDITION:0 "Osman Expedition"
+ OSMAN_EXPEDITION_ADJ:0 "Osman Expeditionary"
+ 
+ 
