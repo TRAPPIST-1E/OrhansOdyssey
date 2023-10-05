@@ -7,5 +7,6 @@
  desc_osm_no_horses:0 "We were only able to bring a few horses with us, and we will have to keep them safe so we can selectively breed them until we have a sizeable herd"
  osm_cheaper_advisors:0 "Working together"
  desc_osm_cheaper_advisors:0 "What shall we pay our advisors in, leaves?"
- 
+ osm_advanced_development_of_temples:0 "Advanced Development of Temples"
+ desc_osm_advanced_development_of_temples:0 "Advanced modifier granted by the Institutionalized Clergy government reform"
  

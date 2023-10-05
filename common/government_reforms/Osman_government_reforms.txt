@@ -2,9 +2,11 @@ osman_expedition = {
 	icon = "chieftain"
 	allow_normal_conversion = no
 	can_change_primary_culture = no
+	lock_level_when_selected = yes
 	potential = {
 		has_reform = osman_expedition
 	}
+	maintain_dynasty = yes
 	fixed_rank = 1
 	modifiers = {
 		land_morale = 0.1
@@ -12,11 +14,43 @@ osman_expedition = {
 		global_manpower_modifier = -0.15
 	}
 	effect = {
-		hidden_effect = {
-			set_variable = {
-				which = to_ab_expand_bureaucracy_cost
-				value = 50
+		if = {
+			limit = {
+				has_country_flag = to_enables_overburdened_administration
 			}
+			custom_tooltip = ability_to_administrative_burden_mechanic
+		}
+	}
+	custom_attributes = {
+		to_free_annexation_of_colonial_nations = yes
+		locked_government_type = yes
+	}
+}
+
+osman_emirate = {
+	icon = "ottoman_government"
+	allow_normal_conversion = no
+	can_change_primary_culture = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = osman_emirate
+	}
+	maintain_dynasty = yes
+	fixed_rank = 2
+	modifiers = {
+		legitimacy = 1
+		army_tradition_decay = -0.01
+		core_creation = -0.1
+		unjustified_demands = -0.1
+	}
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = to_enables_overburdened_administration
+				}
+			}
+			custom_tooltip = to_government_mechanics_tt
 		}
 		if = {
 			limit = {
@@ -25,11 +59,94 @@ osman_expedition = {
 			custom_tooltip = ability_to_administrative_burden_mechanic
 		}
 	}
+	custom_attributes = {
+		to_free_annexation_of_colonial_nations = yes
+	}
+	custom_attributes = {
+		has_harem_events = yes
+		has_harem = yes	
+		locked_government_type = yes
+	}
 	government_abilities = {
 		to_administrative_burden_mechanic
 	}
+}
+
+osman_enlist_pashas = {
+	icon = "provincial_government"
+	potential = {
+		tag = OSM
+	}
+	modifiers = {
+		governing_capacity = 50
+		global_tax_modifier = 0.1
+		tolerance_heathen = 2
+	}
 	custom_attributes = {
-		to_free_annexation_of_colonial_nations = yes
+		has_pashas = yes
+	}
+}
+
+osman_janissary_corps_natives = {
+	icon = "sekban"
+	potential = {
+		tag = OSM
+	}
+	effect = {
+		add_mil_power = -200
+		custom_tooltip = "osman_less_stab_jani_tt"
+	}
+	removed_effect = {
+		add_stability = -1
+	}
+	modifiers = {
+		janissaries_influence_modifier = -0.1
+		janissaries_privilege_slots = 1
+		years_of_nationalism = 2
+	}
+	custom_attributes = {
 		has_janissaries = yes
+		enables_estate_janissaries = yes
+	}
+}
+
+osman_janissary_corps_own = {
+	icon = "devshirme_system"
+	potential = {
+		tag = OSM
+	}
+	effect = {
+		add_mil_power = -200
+		custom_tooltip = "osman_less_stab_jani_tt"
+	}
+	removed_effect = {
+		add_stability = -1
+	}
+	modifiers = {
+		janissaries_influence_modifier = 0.15
+		janissaries_privilege_slots = -1
+		global_unrest = 1
+		allow_janissaries_from_own_faith = yes
+	}
+	custom_attributes = {
+		has_janissaries = yes
+		enables_estate_janissaries = yes
+	}
+}
+
+osman_institutionalized_clergy = {
+	icon = "caliphate"
+	potential = {
+		tag = OSM
+		mission_completed = osm_clerical_institutions
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+		tolerance_own = 2
+	}
+	custom_attributes = {
+		allow_piety_switch_decision = yes
+		on_church_built_clergy_loyalty = yes
 	}
 }

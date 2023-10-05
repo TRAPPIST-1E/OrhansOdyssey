@@ -10,6 +10,7 @@ osm_small_population = {
 	global_regiment_cost = 0.1
 }
 
+
 osm_mediocre_population = {
     manpower_recovery_speed = -0.25
 	global_manpower_modifier = -0.25
@@ -58,4 +59,8 @@ osm_cavalry_nation = {
 
 osm_peaceful_natives = {
 	native_uprising_chance = -1
+}
+
+osm_advanced_development_of_temples = {
+	production_efficiency = 0.15
 }

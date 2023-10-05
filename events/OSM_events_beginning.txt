@@ -174,4 +174,23 @@ country_event = {
 	}
 }
 
-
+#A real country event
+country_event = {
+	id = osmanbegin.5
+	title = osmanbegin.5.t
+	desc = osmanbegin.5.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = osmanbegin.5a
+		remove_government_reform = osman_expedition
+		add_government_reform = osman_emirate
+		add_prestige = 20
+		custom_tooltip = "osm_overburdened_admin_tt"
+		hidden_effect = {
+			set_country_flag = to_enables_overburdened_administration
+			regenerate_government_mechanics = yes
+		}
+	}
+}

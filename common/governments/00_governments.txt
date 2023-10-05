@@ -119,6 +119,7 @@ monarchy = {
 				# elysian_revolutionary_empire
 				# Turkish Submod
 				osman_expedition
+				osman_emirate
 			}
 		}
 		hereditary_vs_nobility = {
@@ -156,6 +157,9 @@ monarchy = {
 				msg_spartan_nobility_crushed
 				msg_spartan_nobility_negotiated
 				msg_spartan_nobility_appeased
+
+				#Osman
+				osman_enlist_pashas
 			}
 		}
 		bureaucracy = {
@@ -225,6 +229,9 @@ monarchy = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
+
+				#osman
+				osman_institutionalized_clergy
 			}
 		}
 		military_doctrines = {
@@ -288,6 +295,10 @@ monarchy = {
 
 				# Third Odyssey
 				to_indiscriminate_greek_fire_use_reform
+
+				#Osman
+				osman_janissary_corps_natives
+				osman_janissary_corps_own
 			}
 		}
 		deliberative_assembly = {

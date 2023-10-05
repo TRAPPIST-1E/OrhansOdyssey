@@ -1,5 +1,20 @@
 ﻿l_english:
  osman_expedition:0 "Osman Expedition"
  osman_expedition_desc:0 "An expedtion of Turkish settlers initially led by Orhan Celebi to the far west of Elysium"
+
+ osman_emirate:0 "Osman Emirate"
+ osman_emirate_desc:0 "A state continued from the small colony of Turkish settlers led by Orhan Celebi to the great plains"
+
+ osman_enlist_pashas:0 "Enlist Pasha Governance"
+ osman_enlist_pashas_desc:0 "Pasha is a title bestowed upon great governers, generals, dignitaries, and others in the old Ottoman Empire. Let us continue this tradition and honor the provincial governers by bestowing on some the title of Pasha"
+
+ osman_janissary_corps_natives:0 "Janissary Heathen Recruitment"
+ osman_janissary_corps_natives_desc:0 "Let us form our Janissary core out of the local pagans and heathens of the area, recruiting their children and raising them in traditional Turkish, Islamic ways"
+ osman_less_stab_jani_tt:0 "Unenacting this reform will make us §Rlose 1 stability§W"
+
+ osman_janissary_corps_own:0 "Janissary Recruitment from Populus"
+ osman_janissary_corps_own_desc:0 "Let us recruit the main part of our Janissary corps from our own faithful populus. Sure, it may lead to uproar from the regular people, but that should be no matter"
  
+ osman_institutionalized_clergy:0 "Institutionalized Clergy"
+ osman_institutionalized_clergy_desc:0 "We have granted the clergy great power in our country, involving them in multiple parts of our bureaucracy"
  

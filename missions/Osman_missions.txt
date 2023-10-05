@@ -1,0 +1,276 @@
+osm_horses_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_breed_horses = {
+		icon = mission_marwari_horses
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_many_herds = {
+		icon = mission_cossack_cavalry
+		position = 2
+		required_missions = { osm_breed_horses } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_horse_nation = {
+		icon = mission_non-western_cavalry_raid
+		position = 3
+		required_missions = { osm_many_herds } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+osm_1_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+}
+osm_2_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_cahokian_diplomacy = {
+		icon = mission_alliances
+		position = 2
+		required_missions = { osm_find_bearings } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+osm_3_slot = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = AAA } 
+
+	osm_find_bearings = {
+		icon = mission_alliances
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_colonial_office = {
+		icon = mission_assemble_an_army
+		position = 2
+		required_missions = { osm_find_bearings } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_reform_admin = {
+		icon = mission_muslim_administrators
+		position = 4
+		required_missions = { osm_emirate_anew } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_clerical_institutions = {
+		icon = mission_islamic_golden_age
+		position = 6
+		required_missions = {
+			osm_ulema
+			osm_reform_admin
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+osm_4_slot = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_farms_fields = {
+		icon = mission_lit_harness_steppes
+		position = 2
+		required_missions = { osm_find_bearings } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_emirate_anew = {
+		icon = mission_late_ottoman_reforms
+		position = 3
+		required_missions = {
+			osm_colonial_office
+			osm_farms_fields
+			osm_build_militia
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_expand_territory = {
+		icon = mission_conquer_50_development
+		position = 5
+		required_missions = { osm_emirate_anew } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_worthy_capital = {
+		icon = mission_castle_construction
+		position = 6
+		required_missions = {
+			osm_expand_territory
+			osm_take_cahokia
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				mission_completed = osm_usurp_cahokia
+				mission_completed = osm_take_cahokia
+			}
+		}
+
+		effect = {  } 
+	}
+}
+osm_5_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_build_militia = {
+		icon = mission_end_tamil_insurgency
+		position = 2
+		required_missions = { osm_find_bearings } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+osm_estate_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_nobles = {
+		icon = friends_in_high_places
+		position = 4
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_ulema = {
+		icon = mission_mosque
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_merchants = {
+		icon = mission_turkish_merchants
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+osm_cahokia_war_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OSM } 
+
+	osm_cahokia_warorsubject = {
+		icon = mission_native_build_army_mission
+		position = 3
+		required_missions = { osm_cahokian_diplomacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_cahokia_expand = {
+		icon = mission_ottoman_early_army
+		position = 4
+		required_missions = { osm_cahokia_warorsubject } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	osm_take_cahokia = {
+		icon = mission_native_dev_capital
+		position = 5
+		required_missions = { osm_cahokia_expand } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
