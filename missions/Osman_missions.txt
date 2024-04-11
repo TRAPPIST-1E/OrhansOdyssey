@@ -68,7 +68,7 @@ osm_3_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = AAA } 
+	potential = { tag = OSM } 
 
 	osm_find_bearings = {
 		icon = mission_alliances
